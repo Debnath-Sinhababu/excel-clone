@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 40vh;
+  
+}
+
+.top-floor{
+    width: 100vw;
+    height:40px;
+    border: 1px solid rgba(245, 245, 245, 0.514);
+    background-color: hsla(0, 0%, 96%, 0.377);
+    filter: brightness(90%);
+    display: flex;
+    align-items: center;
+}
+.ndtop{
+  width: 100vw; 
+  height: 20px;
+  border: none;
+  
+}
+.midpart{
+    width: 100vw;
+    height:530px;
+    border:  1px solid rgba(245, 245, 245, 0.514);
+    overflow:scroll;
+    position: relative;
+    
+}
+.lastpart{
+    width: 100vw;
+    height:30px;
+    border: 1px solid;
+    display: flex;
+    background-color: whitesmoke;
+}
+.cellcontainer{
+    display: flex;
+    
+    min-height: 20px;
+    overflow: auto;
+    
+}
+.cell{
+    width: 90px;
+    min-height:20px;
+    border: 0.8px solid rgba(245, 245, 245, 0.822);
+    text-align: center;
+    outline-color: green;
+}
+.topleft{
+    width:40px;
+    height:20px;
+    
+    position:absolute;
+    left: 0px;
+    z-index: 3;
+    background-color: hsla(0, 0%, 96%, 0.377);
+    
+    filter: brightness(80%);
+    
+}
+.alphabet{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left: 38px;
+    top: 0px;
+   z-index: 2;
+    background-color: hsla(0, 0%, 96%, 0.377);
+    /* border: 0.7px solid rgba(245, 245, 245, 0.822); */
+    filter: brightness(90%);
+    
+}
+.letter{
+    width: 90px;
+    /* border: 0.7px solid rgba(245, 245, 245, 0.822); */
+    text-align: center;
+    height: 20px;
+}
+.number{
+    width:40px;
+    height:20px;
+   border: 0.4px solid rgba(245, 245, 245, 0.822)
+}
+.numbergroup{
+    position:absolute;
+    top:20px;
+    left:0px;
+    z-index: 2;
+    background-color: hsla(0, 0%, 96%, 0.377);
+    filter: brightness(95%);
+    opacity:50%
+}
+.cellhub{
+    position:absolute;
+    left: 38px;
+    top: 20px;
+  z-index: 1;
+}
+#input1{
+    width: 5vw;
+    outline: none;
+    border-left: 0.2px solid;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+#input2{
+   
+    outline: none;
+    margin-left: -5px;
+    border: none;
+}
+.sheetlist{
+    display: flex;
+    width: 100%;
+
+}
+.fa-plus{
+  width: 30px;
+  margin-left: 10px;
+  border-right: 0.5px solid lightgray;
+  height: 100%;
+}
+.sheet{
+    width: 60px;
+   
+    border-right: 0.5px solid lightgray;
+    cursor: pointer;
+    font-size: small;
+    display: flex;
+    align-items: center;
+
+}
+.activesheet{
+    font-weight: bold;
+    background-color: white;
+}
+.top{
+ font-size: small;
+ cursor: pointer;
+  width: 20px;
+  
+}
+ .top:hover{
+    background-color: lightgray;
+   border-radius: 5px;
+   padding: 5px;
+} 
+.styling{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   margin-right:20px;
+   margin-left: 20px;
+  
+}
+.fix{
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px; 
+}
+.fa-bold{
+    margin-right: 10px;
+}
+.fa-italic{
+    margin-right: 10px;
+}
+.fa-underline{
+    margin-right: 0.5vw;
+}
+
